@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i,N[1000],n,j=0,k=0;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        if(n % i == 0)
+        {
+            N[k] = i;
+            j++;
+            k++;
+        }
+    }
+    printf("%d\n",j);
+    for(i=0;i<k;i++)
+    {
+        printf("%d ",N[i]);
+    }
+    return 0;
+}
